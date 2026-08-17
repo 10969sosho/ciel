@@ -4,7 +4,7 @@
 Platform e-commerce dealer motor & sparepart (ATV, motor, mobil, part) untuk client **Pak Joni**. Nama domain: **jomotocenter.com**. Dibangun dengan Laravel + Filament admin panel + storefront Blade.
 
 ## Location
-- Source: `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK JONI/ECOMMERCE/`
+- Source: `https://github.com/Gen-ei-Ryodan/pak-joni-ecommerce`; HP clone: `/root/projects/pak-joni-ecommerce/`; storage backup: `/root/manual-backups/pak-joni-storage/`
 - Git remote: `https://github.com/Gen-ei-Ryodan/pak-joni-ecommerce.git` (branch `main`)
 - Production: `alurelab@emerald.hidden-server.net` port `31988`
 

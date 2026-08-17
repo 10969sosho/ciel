@@ -18,7 +18,7 @@ project. Dibangun sebagai monorepo: Laravel API + Next.js frontend.
 - DB: `alurelab_sistem` (user `alurelab_sistem`)
 - Frontend: static export (`frontend/out`) di docroot `~/qwe.solusisurabaya.com`
 - API: Laravel di-rewrite dari `/api/*` ke `index.php` front controller di docroot
-- Source of truth: `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/TASK/`
+- Source of truth: `https://github.com/10969sosho/sistem`; HP clone: `/root/projects/sistem/`
 
 ## Fitur (V1)
 

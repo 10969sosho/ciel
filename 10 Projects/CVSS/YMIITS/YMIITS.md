@@ -6,7 +6,7 @@ Website publik dan CMS admin Yayasan Manarul Ilmi ITS.
 
 ## Location
 
-`/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/ymiits.com/`
+HP clone: `/root/projects/ymiits/`
 
 ## Tech Stack
 

@@ -6,7 +6,7 @@
 **PTPAS** (Pak Effendi Product Sales System) adalah sistem penjualan produk untuk **CV Sumber Sejahtera**. Sistem ini memungkinkan buyer (customer) browsing produk, keranjang, checkout, dan melihat riwayat order, serta sales membuatkan order untuk buyer.
 
 ## Location
-`/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK EFENDI/PAS/backend`
+HP clone: `/root/projects/pakeffendi-ptpas/`
 
 ## Tech Stack
 - **Backend**: Laravel 12, PHP ^8.2

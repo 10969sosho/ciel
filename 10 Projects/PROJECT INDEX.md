@@ -77,7 +77,7 @@ Registry seluruh project yang ditemukan di `/Users/10969sosho/PROJECT/`, termasu
 | Program Formula | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/BU VANIA/2. PROGRAM FORMULA/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|Bu Vania]] |
 | ADMS source | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/BU VANIA/3. ABSEN MESIN/adms-server/` | [[ADMS/ADMS]] |
 | GYM | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK EFFENDI/GYM/gym-app/` | [[CVSS/GYM/GYM]] |
-| Pak Joni E-commerce | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK JONI/ECOMMERCE/` | [[PAK JONI ECOMMERCE/PAK JONI ECOMMERCE]] |
+| Pak Joni E-commerce | HP: `/root/projects/pak-joni-ecommerce/`; backup storage: `/root/manual-backups/pak-joni-storage/` | [[PAK JONI ECOMMERCE/PAK JONI ECOMMERCE]] |
 | Pak Teddy | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK TEDDY/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|Pak Teddy]] |
 | Pak Teddy Demo | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK TEDDY/DEMO/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|Pak Teddy]] |
 | Pak Tjendrawan V1 | `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK TJENDRAWAN/V1/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|Pak Tjendrawan]] |
@@ -130,9 +130,9 @@ Registry seluruh project yang ditemukan di `/Users/10969sosho/PROJECT/`, termasu
 | Alurelab | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/ALURELAB/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|PRIBADI CVSS]] |
 | Compro | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/COMPRO/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|PRIBADI CVSS]] |
 | CRM | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/CRM/` | [[CVSS/CRM/CRM]] |
-| Task backend | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/TASK/backend/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|TASK]] |
-| Task frontend | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/TASK/frontend/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|TASK]] |
-| Task legacy CRM | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/TASK/CRM LAMA/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|TASK]] |
+| Task backend | HP clone: `/root/projects/sistem/backend/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|TASK]] |
+| Task frontend | HP clone: `/root/projects/sistem/frontend/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|TASK]] |
+| Task legacy CRM | Local folder deleted after Git/hosting validation | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|TASK]] |
 | TES sandbox | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/TES/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|PRIBADI CVSS]] |
 | Website Landing | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/WEBSITE LANDING/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|PRIBADI CVSS]] |
 | Project Tracker | `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/WEBSITE PENCATATAN/project-tracker/` | [[CVSS/CVSS#7. PRIBADI CVSS (Internal Tools)\|PRIBADI CVSS]] |
@@ -144,13 +144,13 @@ Registry seluruh project yang ditemukan di `/Users/10969sosho/PROJECT/`, termasu
 | Program Gaji | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/BU VANIA/1. PROGRAM GAJI /` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
 | Program Formula | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/BU VANIA/2. PROGRAM FORMULA/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
 | Keneas Countdown | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK EFENDI/KENEAS COUNTDOWN/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
-| PAS backend | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK EFENDI/PAS/backend/` | [[CVSS/PTPAS/PTPAS]] |
+| PAS backend | HP clone: `/root/projects/pakeffendi-ptpas/` | [[CVSS/PTPAS/PTPAS]] |
 | ProspEdity | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK EFENDI/PROSPEDITY/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
 | Raijin | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK EFENDI/RAIJIN/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
-| Liefmart | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK RUDI/Liefmart/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
-| Liefmart HGN | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK RUDI/Liefmart/apps/hgn/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
-| Liefmart Livemart | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK RUDI/Liefmart/apps/livemart/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
-| Liefmart frontend | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK RUDI/Liefmart/apps/livemart-frontend/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
+| Liefmart | HP clone: `/root/projects/liefmart/`; full local-file backup: `/root/manual-backups/liefmart-local/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
+| Liefmart HGN | HP clone: `/root/projects/liefmart/apps/hgn/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
+| Liefmart Livemart | HP clone: `/root/projects/liefmart/apps/livemart/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
+| Liefmart frontend | Repository/backup mengikuti monorepo Liefmart di HP | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
 | Pak Tjendrawan V1 | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/PAK TJENDRAWAN/V1/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
 | HKM | `/Users/10969sosho/PROJECT/CVSS/SUDAH_TAYANG/hkm/` | [[CVSS/CVSS#8. SUDAH_TAYANG (Completed/Deployed)\|SUDAH TAYANG]] |
 
