@@ -1,0 +1,93 @@
+# SSH HP Android sebagai Storage VPS
+
+## Tujuan
+
+HP POCO digunakan sebagai storage dan environment Linux remote untuk menyimpan atau menjalankan project CVSS. GitHub tetap menjadi source of truth utama; HP adalah working copy/backup remote.
+
+## Konfigurasi Koneksi
+
+Alias SSH berada di `~/.ssh/config` pada laptop:
+
+```sshconfig
+Host hppoco
+    HostName 100.101.194.87
+    Port 8022
+    User u0_a279
+    RequestTTY force
+    RemoteCommand proot-distro login debian
+```
+
+Detail penting:
+
+- `100.101.194.87` adalah alamat Tailscale HP.
+- Port SSH Termux adalah `8022`.
+- User SSH adalah `u0_a279`.
+- Setelah login, konfigurasi otomatis masuk ke Debian melalui `proot-distro`.
+- Password tidak disimpan di dokumentasi. Gunakan SSH key untuk setup permanen.
+
+## Pengujian Koneksi
+
+Uji jaringan tanpa login:
+
+```bash
+nc -vz -w 5 100.101.194.87 8022
+```
+
+Login interaktif:
+
+```bash
+ssh hppoco
+```
+
+Untuk menjalankan command non-interaktif, override `RemoteCommand` dan TTY karena alias memaksa shell Debian interaktif:
+
+```bash
+ssh -tt -o RemoteCommand=none -o RequestTTY=force hppoco \
+  'proot-distro login debian -- bash -lc "pwd; git --version"'
+```
+
+## Workflow Git Project
+
+Untuk project yang sudah ada di GitHub, clone langsung di Debian HP:
+
+```bash
+ssh -tt -o RemoteCommand=none -o RequestTTY=force hppoco \
+  'proot-distro login debian -- bash -lc "git clone https://github.com/OWNER/REPOSITORY.git /root/projects/REPOSITORY"'
+```
+
+Verifikasi working copy:
+
+```bash
+ssh -tt -o RemoteCommand=none -o RequestTTY=force hppoco \
+  'proot-distro login debian -- bash -lc "cd /root/projects/REPOSITORY && git status --short --branch"'
+```
+
+Untuk project lokal yang belum memiliki `.git` atau remote GitHub, `git clone` tidak dapat digunakan. Push project tersebut ke GitHub terlebih dahulu, atau gunakan `rsync` untuk pemindahan awal.
+
+## Hasil Validasi 2026-08-17
+
+- Port `100.101.194.87:8022` dapat dijangkau.
+- Login password ke Termux berhasil.
+- Debian `proot-distro` berhasil diakses.
+- Git `2.47.3` tersedia di Debian.
+- Koneksi keluar dari HP ke GitHub berhasil.
+- Repository publik `octocat/Hello-World` berhasil diuji dengan `git clone`.
+- Folder lokal `REFERENCE` berukuran sekitar `48 MB`, tetapi bukan repository Git.
+- Repository portfolio `https://github.com/10969sosho/solusisurabaya.git` berhasil di-clone.
+- Working copy portfolio berada di `/root/projects/solusisurabaya` pada HP.
+- Clone portfolio tervalidasi pada branch `feature/portfolio-websites` dan folder `portofolio` tersedia.
+
+## Keamanan
+
+- Password yang pernah dibagikan di chat harus segera diganti.
+- Jangan menaruh password di file konfigurasi, script, command history, atau note Obsidian.
+- Buat SSH key khusus laptop ke HP dan matikan autentikasi password setelah key tervalidasi.
+- Untuk GitHub private repository di HP, key `/root/.ssh/ymiits_deploy_ed25519` ditambahkan ke akun GitHub `10969sosho`; repository YMIITS menyimpan konfigurasi `core.sshCommand` sendiri.
+- Batasi akses SSH melalui jaringan Tailscale dan jangan expose port `8022` ke internet publik.
+
+## Related
+
+- [[CVSS/CVSS]]
+- [[PROJECT INDEX]]
+- [[Git]]
+- [[SSH]]

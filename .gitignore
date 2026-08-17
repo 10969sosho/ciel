@@ -1,0 +1,13 @@
+# Obsidian state that is specific to one device/window session.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Operating-system and editor noise.
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local logs and temporary exports.
+*.log
+*.tmp
