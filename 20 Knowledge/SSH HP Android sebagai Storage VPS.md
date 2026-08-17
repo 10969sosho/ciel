@@ -85,6 +85,33 @@ Untuk project lokal yang belum memiliki `.git` atau remote GitHub, `git clone` t
 - Untuk GitHub private repository di HP, key `/root/.ssh/ymiits_deploy_ed25519` ditambahkan ke akun GitHub `10969sosho`; repository YMIITS menyimpan konfigurasi `core.sshCommand` sendiri.
 - Batasi akses SSH melalui jaringan Tailscale dan jangan expose port `8022` ke internet publik.
 
+## Obsidian Vault di HP
+
+Repository vault: `git@github.com:10969sosho/ciel.git`
+
+Clone pada Debian HP:
+
+```text
+/root/projects/ciel
+```
+
+Clone pada shared storage Android untuk dibuka oleh aplikasi Obsidian:
+
+```text
+/data/data/com.termux/files/home/storage/shared/Obsidian/Ciel
+```
+
+Di aplikasi Obsidian Android, pilih **Open folder as vault** lalu pilih folder `Obsidian/Ciel` dari shared storage.
+
+Workflow aman:
+
+1. Sebelum mengedit dari HP, jalankan `git pull --ff-only origin main`.
+2. Edit note di Obsidian.
+3. Commit dan push perubahan dari Termux atau Debian.
+4. Sebelum mengedit dari laptop, jalankan `git pull --ff-only origin main`.
+
+Jangan mengedit vault secara bersamaan di laptop dan HP karena dapat menghasilkan merge conflict. File `.obsidian/workspace.json` tidak disimpan agar layout setiap perangkat tetap independen.
+
 ## Related
 
 - [[CVSS/CVSS]]
