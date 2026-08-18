@@ -64,6 +64,35 @@ ssh -tt -o RemoteCommand=none -o RequestTTY=force hppoco \
 
 Untuk project lokal yang belum memiliki `.git` atau remote GitHub, `git clone` tidak dapat digunakan. Push project tersebut ke GitHub terlebih dahulu, atau gunakan `rsync` untuk pemindahan awal.
 
+## Transfer Besar via ADB (USB) — Tercepat
+
+Ketika HP terhubung ke Mac via kabel USB, gunakan `adb push` (jauh lebih cepat dari SSH Tailscale, ~63 MB/s).
+
+Rencana umum:
+
+1. Siapkan staging lokal (buang `.git`, `node_modules`, `vendor`, `.next`, dan folder yang sudah di-clone di HP).
+2. `tar -cf` staging → satu file.
+3. `adb push <file.tar> /sdcard/cvss-transfer.tar`.
+4. Dari dalam Debian HP, ekstrak ke tujuan:
+
+```bash
+ssh -tt -o RemoteCommand=none -o RequestTTY=force hppoco \
+  'proot-distro login debian -- bash -lc "mkdir -p /root/projects/CVSS && tar -C /root/projects/CVSS -xf /data/data/com.termux/files/home/storage/shared/cvss-transfer.tar && rm -f /data/data/com.termux/files/home/storage/shared/cvss-transfer.tar"'
+```
+
+Detail penting:
+
+- `/sdcard` di Android = `/data/data/com.termux/files/home/storage/shared/` dari dalam Debian.
+- Rootfs proot berada di `/data/data/com.termux/files/usr/var/lib/proot-distro/containers/debian/rootfs`; `/root/projects` = `.../rootfs/root/projects`.
+- Tar dari macOS menyisipkan file `._*` (AppleDouble) dan folder `__MACOSX`; bersihkan setelah ekstrak:
+
+```bash
+find /root/projects/CVSS -name "._*" -type f -delete
+find /root/projects/CVSS -type d -name "__MACOSX" -exec rm -rf {} +
+```
+
+- Pastikan perangkat terdeteksi: `adb devices -l`.
+
 ## Hasil Validasi 2026-08-17
 
 - Port `100.101.194.87:8022` dapat dijangkau.
