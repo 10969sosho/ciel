@@ -7,6 +7,7 @@ Registry seluruh project yang ditemukan di `/Users/10969sosho/PROJECT/`, termasu
 - Semua folder utama dan codebase project dicatat.
 - Folder teknis internal seperti `vendor/`, `node_modules/`, `storage/`, `app/`, `resources/`, `assets/`, `ent/`, dan `cmd/` tidak dicatat sebagai project terpisah.
 - Project yang belum memiliki note khusus tetap tercatat di registry ini agar tidak hilang dari inventaris.
+- Website static ringan dikelompokkan di `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/`.
 
 ## Top-Level Projects
 

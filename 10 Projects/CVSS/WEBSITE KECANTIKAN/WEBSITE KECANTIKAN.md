@@ -18,7 +18,7 @@ Premium static multi-page beauty website demo built from the brief for Sebu Clin
 - Explicit `index.html` route links for compatibility when opening the demo with `file://`
 
 ## Project Files
-- Project: `/Users/10969sosho/PROJECT/CVSS/WEBSITE KECANTIKAN/`
+- Project: `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/WEBSITE KECANTIKAN/`
 - WhatsApp and Instagram configuration: `script.js`
 - Architecture: `ARCHITECTURE.md`
 

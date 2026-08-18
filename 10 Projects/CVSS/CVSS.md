@@ -21,8 +21,17 @@ CVSS/
 ├── ON_PROGRES/        (7 active client projects)
 ├── PORTOFOLIO/        (20+ portfolio/showcase projects)
 ├── PRIBADI CVSS/      (7 internal CVSS tools)
-└── SUDAH_TAYANG/      (8 completed/deployed projects)
+├── SUDAH_TAYANG/      (8 completed/deployed projects)
+└── WEBSITE RINGAN/    (static HTML/CSS/JS demos)
 ```
+
+### Website Ringan
+
+`WEBSITE RINGAN/` berisi website static yang ringan dan tidak memerlukan runtime backend:
+
+- `WEBSITE AGENCY/` — Otherlands cinematic production house
+- `WEBSITE KECANTIKAN/` — Sebu Clinic multi-page static demo
+- `WEBSITE KOSMETIK/` — ÉLORA cosmetic brand static demo
 
 ---
 

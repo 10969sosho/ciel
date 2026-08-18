@@ -2,7 +2,7 @@
 
 ## Overview
 
-Single-page cinematic production house homepage implemented from the Otherlands brief. The implementation lives at `/Users/10969sosho/PROJECT/CVSS/WEBSITE AGENCY`.
+Single-page cinematic production house homepage implemented from the Otherlands brief. The implementation lives at `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/WEBSITE AGENCY`.
 
 ## Current State
 

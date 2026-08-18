@@ -32,8 +32,8 @@ Premium static multi-page beauty brand demo built for an upcoming presentation. 
 
 ## Project Files
 
-- Project: `/Users/10969sosho/PROJECT/CVSS/WEBSITE KOSMETIK/`
-- Architecture: `/Users/10969sosho/PROJECT/CVSS/WEBSITE KOSMETIK/ARCHITECTURE.md`
+- Project: `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/WEBSITE KOSMETIK/`
+- Architecture: `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/WEBSITE KOSMETIK/ARCHITECTURE.md`
 - Shared runtime: `site.js`
 
 ## Deployment (Live Demo)
