@@ -141,6 +141,29 @@ Workflow aman:
 
 Jangan mengedit vault secara bersamaan di laptop dan HP karena dapat menghasilkan merge conflict. File `.obsidian/workspace.json` tidak disimpan agar layout setiap perangkat tetap independen.
 
+## OpenCode di HP (Config + Auth)
+
+Config OpenCode Mac disalin persis ke Debian HP (`HOME=/root`), termasuk auth, sehingga opencode di HP punya provider dan skills yang sama.
+
+| Item | Lokasi di HP |
+|---|---|
+| Config global | `/root/.config/opencode/opencode.jsonc` (provider `bandelbanget`, `model: deepseek/deepseek-v4-flash`) |
+| Global AGENTS | `/root/.config/opencode/AGENTS.md` |
+| Skills (18) | `/root/.config/opencode/skills/` |
+| Plugin | `/root/.config/opencode/plugins/crg-plugin.ts` (code-review-graph) |
+| Auth | `/root/.local/share/opencode/auth.json` (OpenAI, DeepSeek, OpenCode Go) |
+| Package | `node_modules` HP (aarch64) tidak di-overwrite; sudah punya `@opencode-ai/plugin` 1.18.18 |
+
+Catatan: permission `external_directory` untuk Obsidian di config HP menunjuk ke `/data/data/com.termux/files/home/storage/shared/Obsidian/Ciel/**` (bukan path Mac).
+
+Cara menjalankan opencode di HP dari Mac:
+
+```bash
+ssh -tt -o RemoteCommand=none -o RequestTTY=force hppoco 'proot-distro login debian -- bash -lc "cd /root/projects/ciel && opencode"'
+```
+
+Verifikasi: `opencode auth list` (3 credentials), `opencode models` (bandelbanget/deepseek/opencode-go), dan `opencode run --model deepseek/deepseek-v4-flash` berhasil.
+
 ## Related
 
 - [[CVSS/CVSS]]
