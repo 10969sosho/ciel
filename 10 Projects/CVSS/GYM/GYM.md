@@ -6,7 +6,7 @@
 Platform membership berbasis web/mobile responsive. Member bisa login via WhatsApp OTP, lihat kartu digital, riwayat pembayaran, dan notifikasi. Admin kelola members, payments, dan notifikasi via panel admin.
 
 ## Location
-`/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/PAK EFFENDI/GYM/gym-app`
+Clone HP: `/root/projects/gym` (Debian HP). Source mirror: `/root/projects/CVSS/ON_PROGRES/PAK EFFENDI/GYM/gym-app`
 
 ## Tech Stack
 - **Backend**: Laravel 13, PHP 8.3

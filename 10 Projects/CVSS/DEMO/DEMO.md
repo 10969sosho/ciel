@@ -4,10 +4,11 @@
 Demo e-commerce toko kopi & brewing gear (CoffeeShop) — showcase lengkap untuk CVSS. Mencakup katalog produk, keranjang server-side, checkout dengan alamat wilayah 4-level (Kemendagri), pembayaran Midtrans Snap (sandbox), tracking nomor resi (AWB), dan admin panel. Tema buyer coffee (espresso/caramel/cream).
 
 ## Location
-- **Source**: `/Users/10969sosho/PROJECT/CVSS/DEMO/`
-- **Backend**: `/Users/10969sosho/PROJECT/CVSS/DEMO/backend/`
-- **Frontend**: `/Users/10969sosho/PROJECT/CVSS/DEMO/frontend/`
-- **Dokumentasi fitur lengkap**: `/Users/10969sosho/PROJECT/CVSS/DEMO/docs/FEATURES.md`
+Folder lokal dihapus; source di mirror HP `/root/projects/CVSS/DEMO/` (Debian HP):
+- **Source**: `/root/projects/CVSS/DEMO/`
+- **Backend**: `/root/projects/CVSS/DEMO/backend/`
+- **Frontend**: `/root/projects/CVSS/DEMO/frontend/`
+- **Dokumentasi fitur lengkap**: `/root/projects/CVSS/DEMO/docs/FEATURES.md`
 
 ## Tech Stack
 | Layer | Teknologi |

@@ -4,9 +4,9 @@
 Aplikasi photo booth yang terdiri dari web backend (Laravel + Filament admin + API) dan Android APK (Flutter/Dart). Target device: tablet Android dengan USB camera. Output: photo strip 600×1800px (2×6 inch, 300 DPI) + print layout 1200×1800px (4×6 inch) + PDF.
 
 ## Location
-- **Web source**: `/Users/10969sosho/PROJECT/CVSS/PORTOFOLIO/PhotoBox/PHOTOBOX_WEB/`
-- **APK source**: `/Users/10969sosho/PROJECT/CVSS/PORTOFOLIO/PhotoBox/PHOTOBOX_APK/`
-- **Foto template source**: `/Users/10969sosho/PROJECT/CVSS/PORTOFOLIO/PhotoBox/foto/`
+Folder lokal dihapus; clone HP: `/root/projects/photobox` (Debian HP). Source mirror: `/root/projects/CVSS/PORTOFOLIO KECIL/PhotoBox/`
+- **Web source**: `/root/projects/CVSS/PORTOFOLIO KECIL/PhotoBox/PHOTOBOX_WEB/`
+- **APK source**: `/root/projects/CVSS/PORTOFOLIO KECIL/PhotoBox/PHOTOBOX_APK/`
 - **Git remote**: `https://github.com/10969sosho/photobox.git` (branch `main`)
 
 ## Tech Stack

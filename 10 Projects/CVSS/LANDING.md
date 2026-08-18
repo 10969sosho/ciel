@@ -5,7 +5,7 @@ Landing page conversion-focused untuk traffic **Meta Ads / Google Ads** dengan o
 ## Status
 - **DEPLOYED (live)** · repo `landingcvss` (https://github.com/Gen-ei-Ryodan/landingcvss)
 - URL: **https://digital.solusisurabaya.com**
-- Path: `/Users/10969sosho/PROJECT/CVSS/CAMPAIGN ADS/LANDING`
+- Path: clone HP `/root/projects/landingcvss` (Debian HP)
 - Server deploy: `alurelab` (SSH) → repo `/home/alurelab/repositories/landingcvss` (pull/main) → build statik → `/home/alurelab/digital.solusisurabaya.com`
 
 ## Deployment (Static Export, shared hosting cPanel)

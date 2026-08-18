@@ -32,13 +32,13 @@ Premium static multi-page beauty brand demo built for an upcoming presentation. 
 
 ## Project Files
 
-- Project: `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/WEBSITE KOSMETIK/`
-- Architecture: `/Users/10969sosho/PROJECT/CVSS/WEBSITE RINGAN/WEBSITE KOSMETIK/ARCHITECTURE.md`
+- Project: `/root/projects/CVSS/WEBSITE RINGAN/WEBSITE KOSMETIK/` (mirror HP)
+- Architecture: `/root/projects/CVSS/WEBSITE RINGAN/WEBSITE KOSMETIK/ARCHITECTURE.md` (mirror HP)
 - Shared runtime: `site.js`
 
 ## Deployment (Live Demo)
 
-- Source copy: `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/COMPRO/REFERENCE/website/elora/`
+- Source copy: mirror HP `/root/projects/CVSS/PRIBADI CVSS/COMPRO/REFERENCE/website/elora/`
 - Repo: `https://github.com/10969sosho/solusisurabaya` (branch `main`)
 - Server checkout: `/home/alurelab/repositories/solusisurabaya`
 - Document root: `/home/alurelab/solusisurabaya.com`

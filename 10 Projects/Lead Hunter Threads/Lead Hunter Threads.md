@@ -13,7 +13,7 @@ created: 2026-08-07
 Dashboard web + scraper untuk memantau orang yang butuh jasa digital (website, aplikasi, ERP, dll) dari Threads, dan menampilkan lead dengan link post.
 
 ## Lokasi Proyek
-`/Users/10969sosho/PROJECT/CVSS/EXPLORE/THREADS`
+Mirror HP: `/root/projects/CVSS/EXPLORE/THREADS` (Debian HP)
 
 ## Cara Menjalankan
 ```bash

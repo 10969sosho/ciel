@@ -14,7 +14,7 @@ CVSS CRM adalah workspace internal sales yang berfokus pada alur sederhana: lead
 
 ## Source of Truth
 
-Kode ada di `/Users/10969sosho/PROJECT/CVSS/PRIBADI CVSS/CRM/`.
+Kode ada di mirror HP `/root/projects/CVSS/PRIBADI CVSS/CRM/` (Debian HP).
 Dokumentasi teknis ada di `PROJECT_CONTEXT.md`, `ARCHITECTURE.md`, `BUSINESS_RULES.md`, `DATABASE.md`, dan `API_REFERENCE.md`.
 
 ## Related

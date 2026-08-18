@@ -4,7 +4,12 @@
 CVSS adalah agency/company yang membangun berbagai aplikasi web, mobile, dan landing page untuk klien. Folder ini berisi **40+ project** dengan tech stack utama Laravel, Laravel Filament, Next.js, dan static HTML/CSS/JS.
 
 ## Location
-`/Users/10969sosho/PROJECT/CVSS/`
+
+Folder lokal `/Users/10969sosho/PROJECT/CVSS/` **sudah dihapus** (dipindah ke HP). Source of truth ada di GitHub; working copy lengkap ada di HP:
+
+- Mirror penuh struktur CVSS: `/root/projects/CVSS/` (Debian HP)
+- Clone per-repository: `/root/projects/<repo>` (Debian HP)
+- Backup khusus: `/root/manual-backups/pre-delete` (file deploy/untracked yang tidak ada di mirror)
 
 ### Notes Project per-Proyek
 - **DEMO** → [[DEMO]] (HardwareShop e-commerce: Next.js + Laravel; fitur alamat 1x, Midtrans, admin panel)

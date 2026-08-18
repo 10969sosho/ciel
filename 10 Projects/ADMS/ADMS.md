@@ -29,7 +29,7 @@ ADMS/
 
 ### Dependencies
 - Laravel Framework
-- Vendor berada di: `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/BU VANIA/3. ABSEN MESIN/adms-server/vendor/`
+- Vendor berada di: clone HP `/root/projects/solution/vendor/` (Debian HP, repo `solution` = ADMS)
 
 ### Configuration
 - Database path: `.../ADMS/adms-server/database/database.sqlite`
@@ -38,7 +38,7 @@ ADMS/
 
 ## Status
 - **Incomplete**: Hanya folder `storage/` yang tersisa. Source code utama (app/, config/, routes/, dll.) tidak ada di folder ini.
-- Source code asli berada di: `/Users/10969sosho/PROJECT/CVSS/ON_PROGRES/BU VANIA/3. ABSEN MESIN/adms-server/`
+- Source code asli berada di: HP clone `/root/projects/solution/` (Debian HP, repo `solution` = ADMS)
 
 ## Notes
 - Last error log: 2026-08-03 - Database SQLite tidak ditemukan

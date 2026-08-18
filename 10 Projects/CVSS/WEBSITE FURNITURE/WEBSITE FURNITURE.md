@@ -2,7 +2,7 @@
 
 ## Overview
 
-Premium editorial furniture showroom built from the SinarIndahTeknik brief. The implementation lives at `/Users/10969sosho/PROJECT/CVSS/WEBSITE FURNITURE`.
+Premium editorial furniture showroom built from the SinarIndahTeknik brief. The implementation lives at `/root/projects/furniture` (clone HP, Debian).
 
 ## Current State
 
