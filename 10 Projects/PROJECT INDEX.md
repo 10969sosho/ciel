@@ -84,7 +84,7 @@ Untuk path yang benar-benar terbaru, gunakan [[PROJECT CATALOG]] terlebih dahulu
 |---|---|---|
 | Absen Vgen | `/root/projects/CVSS/ON_PROGRES/ABSEN VGEN/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|ABSEN VGEN]] |
 | Program Formula | `/root/projects/CVSS/ON_PROGRES/BU VANIA/2. PROGRAM FORMULA/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|Bu Vania]] |
-| ADMS source | HP clone: `/root/projects/solution/` | [[ADMS/ADMS]] |
+| ADMS source | HP clone: `/root/projects/solution/`; local clone (deploy): `/root/workspace/projects/solution/` | [[ADMS/ADMS]] · [[SOLUTION/Project — SOLUTION\|SOLUTION]] |
 | GYM | HP clone: `/root/projects/gym/` | [[CVSS/GYM/GYM]] |
 | Pak Joni E-commerce | HP: `/root/projects/pak-joni-ecommerce/`; backup storage: `/root/manual-backups/pak-joni-storage/` | [[PAK JONI ECOMMERCE/PAK JONI ECOMMERCE]] |
 | Pak Teddy | `/root/projects/CVSS/ON_PROGRES/PAK TEDDY/` | [[CVSS/CVSS#5. ON_PROGRES (Active Client Projects)\|Pak Teddy]] |
