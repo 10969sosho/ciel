@@ -8,9 +8,24 @@ last_updated: 2026-08-28
 
 > Aturan main antara Sosho & Hermes. Konsisten lintas sesi.
 
+## PREFLIGHT — Tanya Dulu Sebelum Eksekusi
+- Jika ada **ketidaksesuaian/ambigu** (nama project, workflow, lokasi target, scope) → **tanya dulu** lewat `clarify()` atau konfirmasi eksplisit
+- Contoh kasus:
+  - Project identity: "pak-effendi-ecommerce" vs "pak-joni-ecommerce" — beda project, beda repo
+  - Workflow: edit local→git push→server pull→copy docroot **≠** edit langsung di docroot hosting
+  - Lokasi: `~/repositories/<repo>` = source code only, **bukan** target edit
+- Lebih baik **1× konfirmasi** daripada eksekusi 2× + rollback (pengalaman 2026-08-28: edit langsung di `~/jomotocenter.com` harus di-recovery karena bukan workflow yang benar)
+- Untuk project yang dikenal, search CIEL vault dulu via skill `ciel-workflow` sebelum mulai
+
 ## ATURAN WAJIB Hosting
 - `~/repositories/` di cPanel **HANYA** kode sumber — no symlink storage, no upload/migrate/log/DB ke repo
-- Operate langsung ke **docroot domain tujuan** (mis. `~/membership.solusisurabaya.com`)
+- **JANGAN edit langsung di docroot domain** (mis. `~/jomotocenter.com`) — SELALU lewat git
+- Workflow deploy Laravel (diadopsi dari jomotocenter 2026-08-28):
+  1. Edit di **local clone** `/root/workspace/projects/<repo>`
+  2. `git add` → `git commit` → `git push origin main`
+  3. SSH ke hosting → `cd ~/repositories/<repo>` → `git fetch origin main` + `git reset --hard origin/main`
+  4. Copy folder/file dari `~/repositories/<repo>` ke docroot domain
+  5. `php artisan optimize:clear` + `view:clear` di docroot
 - Diterapkan: kabekabe `filesystems.php` disk `public` root → docroot storage (commit `6ccf3bb`)
 
 ## Kabekabe Workflow
