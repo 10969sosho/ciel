@@ -55,3 +55,26 @@ User ingin revisi flow browse:
 
 ⚠️ **PELAJARAN:** Jangan edit langsung di `~/jomotocenter.com` di hosting. Selalu lewat local → git → server repos → deploy script.
 
+## Current Update — 2026-08-28 (Round 2): Bug Title + Kategori Page Grid
+
+### Temuan (setelah user test di browser)
+1. **Raw `<?php echo` di `<title>`** — page `/pilih/motor` render `<title>Pilih Merk &lt;?php echo e($type-&gt;name); ?&gt;</title>`. Root cause: di `choose.blade.php` line 3, syntax pakai `'Pilih Merk {{ $type->name }}'` (string literal Blade) — harusnya concatenation PHP `'Pilih Merk ' . $type->name`.
+2. **Kategori page (`/pilih/motor/{brand}/kategori`) masih pakai grid `auto-fill` 220px** — bukan 3 kolom fixed. Plus title-nya juga bug yang sama.
+
+### Files Changed (Round 2)
+- `resources/views/buyer/product/choose.blade.php` — fix title: `'Pilih Merk ' . $type->name` (commit `aae09d61`)
+- `resources/views/buyer/product/categories.blade.php`:
+  - Fix title: `$brandModel->name . ' - Kategori ' . $type->name`
+  - Fix grid: `.product-cat-grid` dari `repeat(auto-fill, minmax(220px, 1fr))` → `repeat(3, 1fr)` fixed + responsive breakpoint
+  - Tambah `overflow: hidden` + `max-width: 100%`
+- Commit: `6789d20d`
+
+### Pelajaran
+- **SELALU verify rendered HTML**, bukan hanya Blade syntax. `curl -s URL | grep <title>` adalah sanity check wajib setelah edit Blade yang menyentuh `@section('title', ...)`.
+- **Bug yang sama bisa muncul di multiple files**. Selalu grep pattern `title.*'{{` di seluruh `views/buyer/` untuk catch semua.
+- **URL flow jomotocenter yang benar:**
+  - `/pilih/motor` → list merk (`buyer.product.choose`)
+  - `/pilih/motor/{brand}/kategori` → list kategori per merk (`buyer.product.categories`)
+  - `/kategori/{type}/{brand}` → list items per kategori+brand (`buyer.category-brand`)
+- Untuk grid 3-3, pattern yang dipakai: `grid-template-columns: repeat(3, 1fr)` + `overflow: hidden` + `max-width: 100%` + responsive media queries (2 col di 980px, 1 col di 640px).
+
