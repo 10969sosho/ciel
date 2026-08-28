@@ -1,6 +1,14 @@
 # Project Index
 
-Registry seluruh project yang ditemukan di `/Users/10969sosho/PROJECT/`, termasuk project yang berada di dalam subfolder `CVSS/`. Path di bawah adalah source of truth untuk lokasi filesystem; wiki-link adalah hubungan antar-note di vault.
+Registry project dan entry point menuju katalog filesystem saat ini. Katalog path terbaru ada di [[PROJECT CATALOG]]. Path di bawah adalah source of truth untuk lokasi filesystem; wiki-link adalah hubungan antar-note di vault.
+
+## Fast Search Aliases
+
+- **Payroll Bu Vania / Gaji Bu Vania / ADMS Bu Vania / HRIS Bu Vania** → `/root/projects/CVSS/ON_PROGRES/BU VANIA/solution`
+- **Payroll Bu Vania live / Gaji Bu Vania deployed** → `/root/projects/CVSS/SUDAH_TAYANG/BU VANIA/bu-vania-gaji`
+- **Formula Bu Vania** → `/root/projects/CVSS/SUDAH_TAYANG/BU VANIA/bu-vania-formula`
+
+Untuk path yang benar-benar terbaru, gunakan [[PROJECT CATALOG]] terlebih dahulu.
 
 ## Scope
 
