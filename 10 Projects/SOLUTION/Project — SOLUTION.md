@@ -36,5 +36,9 @@ ADMS (Attendance & Device Management System) + HRMS (HR Management System) untuk
 - [[GitHub — 10969sosho & Gen-ei-Ryodan]]
 - [[Sosho — Working Agreement (Hermes)]]
 
-## Current Update — 2026-08-28
-Deploy commit `b67d592`: "fix: hapus field kode di master golongan/jabatan/lokasi, hapus department/email di form karyawan, perbaiki template form izin". Migration `2026_08_27_000001_drop_code_from_master_tables` berhasil dijalankan di server. 20 file changed (controllers, models, views, migration). Tidak ada perubahan JS/Vite → tidak perlu rebuild.
+## Session Log
+- 2026-09-01: [[2026-09-01 — Deploy Payroll Laporan Pinjaman]] — merge `fix/bugs` → `main` (`52fcc56`): fitur Laporan Pinjaman + sidebar grouping. Deploy sukses, semua endpoint hijau.
+- 2026-08-28: Deploy `b67d592` (drop kode master + fix izin template) — migration sukses.
+
+## Current Update — 2026-09-01
+Deploy commit `52fcc56` (merge `fix/bugs`): fitur **Laporan Pinjaman** (`/loans/laporan`) — filter karyawan/bulan/tahun, tampilkan sisa, bon bulan ini, bayar bulan ini, sisa akhir, status lunas/belum. Sidebar dipindahkan dari grup Pinjaman ke grup Laporan. Tidak ada migration, tidak ada perubahan JS/Vite. Server: `52fcc56`.
