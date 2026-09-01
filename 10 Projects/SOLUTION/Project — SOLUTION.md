@@ -37,8 +37,9 @@ ADMS (Attendance & Device Management System) + HRMS (HR Management System) untuk
 - [[Sosho — Working Agreement (Hermes)]]
 
 ## Session Log
-- 2026-09-01: [[2026-09-01 — Deploy Payroll Laporan Pinjaman]] — merge `fix/bugs` → `main` (`52fcc56`): fitur Laporan Pinjaman + sidebar grouping. Deploy sukses, semua endpoint hijau.
+- 2026-09-01 (seeder): [[2026-09-01 — Seeder Data Dummy Lengkap]] — 11 factory + DummyDataSeeder komprehensif, run di hosting: 12 karyawan, 826 attendance, 24 payrolls (2 bln). Akun: admin@adms.test / password.
+- 2026-09-01 (deploy): [[2026-09-01 — Deploy Payroll Laporan Pinjaman]] — merge `fix/bugs` → `main` (`52fcc56`): fitur Laporan Pinjaman + sidebar grouping. Deploy sukses, semua endpoint hijau.
 - 2026-08-28: Deploy `b67d592` (drop kode master + fix izin template) — migration sukses.
 
 ## Current Update — 2026-09-01
-Deploy commit `52fcc56` (merge `fix/bugs`): fitur **Laporan Pinjaman** (`/loans/laporan`) — filter karyawan/bulan/tahun, tampilkan sisa, bon bulan ini, bayar bulan ini, sisa akhir, status lunas/belum. Sidebar dipindahkan dari grup Pinjaman ke grup Laporan. Tidak ada migration, tidak ada perubahan JS/Vite. Server: `52fcc56`.
+Seeder DummyDataSeeder sukses di hosting. Server running `dbd5c33` (main). Database: 12 employees (Indonesia, salary 3.1-7jt), 6 golongan, 8 jabatan, 6 lokasi, 826 attendance logs (Aug+Sep 2026, SENIN-JUMAT), 33 permits, 7 loans + 22 payments, 24 payrolls. Akun login: `admin@adms.test` / `password` (super_admin). Untuk reseed manual: `php artisan db:seed --class=DummyDataSeeder`.
